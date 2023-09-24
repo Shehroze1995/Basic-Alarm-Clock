@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="alarmGif"></div>
+    <div id="displayClock"></div>
+    <input type="datetime-local" name="time" id="timeForAlarm" onchange="setTimeForAlarm()" />
+    <div class="btns">
+      <button id="setAlarm" onclick="setAlarm()">Set Alarm</button>
+      <button id="clearAlarm" onclick="stopAlarm()">Cancel Alarm</button>
+    </div>
+    <div id="alarmConfirmation"></div>
+    <div class="overLay"></div>
+    <div class="error"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
