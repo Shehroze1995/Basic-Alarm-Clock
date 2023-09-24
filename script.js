@@ -1,4 +1,4 @@
-const alarmTune = new Audio("alarm-clock-beep.wav");
+const alarmTune = new Audio("assets/alarm-clock-beep.wav");
 alarmTune.loop = true;
 const displayClock = document.getElementById("displayClock");
 const timeForAlarm = document.getElementById("timeForAlarm");
