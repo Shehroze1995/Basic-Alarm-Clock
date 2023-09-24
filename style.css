@@ -21,16 +21,15 @@ body {
   padding: 3rem 0;
 }
 #alarmGif {
-  width: min(25vw, 10rem);
-  height: min(25vw, 10rem);
-  background-image: url("alarm.gif");
-  background-position: center;
-  background-size: cover;
+  width: min(25vw, 8rem);
   display: none;
+}
+#alarmGif img{
+  width: 100%;
 }
 #displayClock {
   color: #dc2626;
-  font-size: min(20vw, 12rem);
+  font-size: min(15vw, 12rem);
 }
 input {
   font-size: min(7vw, 3rem);
@@ -76,6 +75,7 @@ button {
   top: -100%;
   background-color: rgba(100, 116, 139, 0.7);
   transition: 0.3s;
+  z-index: -1;
 }
 .showOverLay{
   top: 0;
@@ -83,7 +83,7 @@ button {
 }
 .error {
   position: absolute;
-  top: -50%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
